@@ -16,10 +16,6 @@ stores = [
               "name": "chair",
               "price": 15.99
             },
-            {
-              "name": "chair",
-              "price": 15.99
-            }
         ]
     }
 ]
@@ -59,5 +55,6 @@ def get_item_in_store(name):
         if store["name"] == name:
             return {"items": store["items"]}
     return {"message": "store not found"}, 404
+
 
 
